@@ -21,7 +21,8 @@
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](https://user-images.githubusercontent.com/106669781/211171091-806e6dd7-8408-4c93-a399-9be27fcdd7eb.png)
+
 
 
 ### Links
