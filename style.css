@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    padding: 50px;
+}
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "x x y"
+                         "w z y"
+                         "a b c";
+    align-items: center;
+    justify-content: center;
+    grid-gap: 20px;
+}
+.item h1{
+    color: hsl(233, 8%, 79%);
+}
+p{
+    font-size: 15px;
+}
+#x{
+    background-image: url("./images/image-web-3-desktop.jpg");
+    background-size: cover;
+    background-repeat: inherit;
+    background-position-y: center;
+    background-clip: border-box;
+    width: 700px;
+    height: 200px;
+}
+#y{
+    width: 300px;
+    height: 400px;
+    color: whitesmoke;
+    background-color: hsl(240, 100%, 5%);
+    padding: 10px;
+    margin-top: -38px;
+    color: hsl(36, 100%, 99%);
+}
+#y h2{
+    color: hsl(35, 77%, 62%);
+    margin-bottom: 10px;
+}
+
+#w{
+    font-size: 50px;
+    font-weight: 900;
+}
+#w, #z{
+    width: 300px;
+    height: 200px;
+    background: none;
+    margin-top: 20px;
+}
+#z .button{
+    border: none;
+    background-color: hsl(5, 85%, 63%);
+    padding: 10px;
+    width: 150px;
+    color: hsl(36, 100%, 99%);
+    margin-top: 50px;
+    letter-spacing: 2px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#z .button:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+#article h4, p{
+    padding: 5px;
+}
+#article h4:hover{
+    color:  hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+.article h3{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article h3:hover{
+    color: hsl(35, 77%, 62%);
+}
+.line{
+    content: '';
+    width: 100%;
+    background-color: #eee;
+    height: 1px;
+    display: block;
+    margin: 20px 0;
+}
+#article img{
+    width: 80px;
+    float: left;
+    margin-right: 20px;
+}
+
+header{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: end;
+    padding: 3% 6%;
+}
+.nav-links{
+    flex: 1;
+    margin-top: -5%;
+}
+.nav-links ul li{
+    list-style: none;
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.nav-links ul li a:hover{
+    color: hsl(5, 85%, 63%);
+}
+
