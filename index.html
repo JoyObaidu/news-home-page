@@ -8,13 +8,20 @@
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.2.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <main>
     <header>
         <div class="logo"><img src="./images/logo.svg" role="image" alt=""></div>
-        <nav role="">
+        <div class="menu_toggle">
+            <img src="./images/icon-menu.svg" alt="menu_toggle" class="menu_toggle" id="menu_toggle">
+        </div>
+        <nav role="navigation">
+           
            <div class="nav-links">
+            <img src="./images/icon-menu-close.svg" alt="menu_close" class="menu_close" id="menu_close">
             <ul>
                 <li role="listitem"><a href="#" role="link">Home</a></li>
                 <li><a href="#" role="link">New</a></li>
@@ -22,9 +29,13 @@
                 <li><a href="#" role="link">Trending</a></li>
                 <li><a href="" role="link">Categories</a></li>
             </ul>
-           </div>
+           </div>    
+          
+          
         </nav>
+          <div class="overlay" id="overlay"></div>
     </header>
+    
     <div class="container">
         <div class="item" id="x" style="grid-area: x;"></div>
 
@@ -59,23 +70,27 @@
 
         <div class="item" id="article" style="grid-area: a;">
             <img src="./images/image-retro-pcs.jpg" alt="image-retro-pcs" role="image">
-            <h1> 01</h1>
+            <h3> 01</h3>
             <h4>Reviving Retro PCs</h4>
             <p> What happens when old PCs are given modern upgrades?</p>
         </div>
         <div class="item" id="article" style="grid-area: b;">
             <img src="./images/image-top-laptops.jpg" alt="image-retro-pcs" role="image">
-            <h1> 02</h1>
+            <h3> 02</h3>
             <h4>Top 10 Laptops of 2022</h4>
             <p> Our best picks for various needs and budgets</p>
         </div>
         <div class="item" id="article" style="grid-area: c;">
             <img src="./images/image-gaming-growth.jpg" alt="image-gaming-growth" role="image">
-            <h1> 03</h1>
+            <h3> 03</h3>
             <h4>The Growth of Gaming</h4>
             <p>How the pandemic has sparked fresh opportunities.</p>
         </div>
     </div>
+
     <div class="authorization" style="padding: 10px;text-align: center;" role="doc-acknowledgments">Code by <a href="frontendmentor.io">Frontend Mentor.</a>Coded by <a href="JoyObaidu.github.io">Joy Obaidu</a></div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
