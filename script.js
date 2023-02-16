@@ -1,10 +1,8 @@
-$(document).ready(function() {
-    $("#menu_toggle").click(function() {
-        $(".nav-links").show();
-    });
+function openNav() {
+    document.getElementById("sideNav").style.width = "250px";
+    document.body.style.backgroundColor = "hsl(233, 8%, 79%)";
+}
 
-    $("#menu_close").click(function() {
-        $("nav").hide();
-        $(".overlay").show();
-    });
-});
+function closeNav() {
+    document.getElementById("sideNav").style.width = "0";
+}

@@ -6,91 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.2.js"></script>
-    <title>Document</title>
+    <title>News homepage</title>
 </head>
 <body>
-    <main>
-    <header>
-        <div class="logo"><img src="./images/logo.svg" role="image" alt=""></div>
-        <div class="menu_toggle">
-            <img src="./images/icon-menu.svg" alt="menu_toggle" class="menu_toggle" id="menu_toggle">
-        </div>
-        <nav role="navigation">
-           
-           <div class="nav-links">
-            <img src="./images/icon-menu-close.svg" alt="menu_close" class="menu_close" id="menu_close">
-            <ul>
-                <li role="listitem"><a href="#" role="link">Home</a></li>
-                <li><a href="#" role="link">New</a></li>
-                <li><a href="#" role="link">Popular</a></li>
-                <li><a href="#" role="link">Trending</a></li>
-                <li><a href="" role="link">Categories</a></li>
-            </ul>
-           </div>    
-          
-          
-        </nav>
-          <div class="overlay" id="overlay"></div>
-    </header>
     
-    <div class="container">
-        <div class="item" id="x" style="grid-area: x;"></div>
-
-        <div class="item" id="y" style="grid-area: y;">
-         <h2>New</h2>
-         <div class="article" role="article">
-            <h3> Hydrogen VS Electric Cars</h3>
-            <p>Will hydrogen-fueled cars ever catch up to EVs? </p>
-         </div>
-                <div class="line"></div>
-
-         <div class="article" role="article">
-            <h3>The Downsides of AI Artistry</h3>
-            <p>What are the possible adverse effects of on-demand AI image generation?</p>
-         </div>
-               <div class="line"></div>
-
-         <div class="article" role="article">
-            <h3>Is VC Funding Drying Up?</h3>
-            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means. </p>
-         </div>
-
-
-        </div>
-        <div class="item" id="z" style="grid-area: z;">
-            <p>We dive into the next evolution of the web that claims to put the power of the platforms
-                back into the hands of the people.
-                But is it really fulfilling its promise? </p>
-           <button class="button" role="button">READ MORE</button></div>
-
-        <div class="item"  id="w" style="grid-area: w;">The Bright Future of Web 3.0?</div>
-
-        <div class="item" id="article" style="grid-area: a;">
-            <img src="./images/image-retro-pcs.jpg" alt="image-retro-pcs" role="image">
-            <h3> 01</h3>
-            <h4>Reviving Retro PCs</h4>
-            <p> What happens when old PCs are given modern upgrades?</p>
-        </div>
-        <div class="item" id="article" style="grid-area: b;">
-            <img src="./images/image-top-laptops.jpg" alt="image-retro-pcs" role="image">
-            <h3> 02</h3>
-            <h4>Top 10 Laptops of 2022</h4>
-            <p> Our best picks for various needs and budgets</p>
-        </div>
-        <div class="item" id="article" style="grid-area: c;">
-            <img src="./images/image-gaming-growth.jpg" alt="image-gaming-growth" role="image">
-            <h3> 03</h3>
-            <h4>The Growth of Gaming</h4>
-            <p>How the pandemic has sparked fresh opportunities.</p>
-        </div>
+   <header>
+    <div class="logo">
+        <img src="./images/logo.svg" alt="">
     </div>
 
-    <div class="authorization" style="padding: 10px;text-align: center;" role="doc-acknowledgments">Code by <a href="frontendmentor.io">Frontend Mentor.</a>Coded by <a href="JoyObaidu.github.io">Joy Obaidu</a></div>
+   <nav>
+      <div class="toggle" onclick="openNav()">
+        <img src="./images/icon-menu.svg" class="icon-menu" alt="">
+    </div>
+    <div class="nav-links" id="sideNav">
+        <div class="close" onclick="closeNav()"><img src="./images/icon-menu-close.svg" class="icon-menu-close" alt=""></div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Category</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Popular</a></li>
+    </div>
+   </nav>
+   </header>
+
+    <main>
+        <div class="grid-container">
+            <div class="item1">
+                <img class="dsektop-img" src="./images/image-web-3-desktop.jpg" width="100%" alt="">
+                <img src="./images/image-web-3-mobile.jpg" height="200px" alt="" class="mobile-img">
+            </div>
+            <div class="item2"> The Bright Future of Web 3.0? </div>
+            <div class="item3">
+                <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+                    But is it really fulfilling its promise?</p>
+                    <a href="#">Read More</a>
+            </div>
+            <div class="item4">
+                <h1>New</h1>
+                <div class="content">
+                    <b> Hydrogen VS Electric Cars</b>
+                    <br>
+                    <small>Will hydrogen-fueled cars ever catch up to EVs?</small>
+                </div>
+                <hr>
+                <div class="content">
+                    <b>The Downsides of AI Artistry</b>
+                    <br>
+                    <small>What are the possible adverse effects of on-demand AI image generation? </small>
+                </div>
+                <hr>
+                <div class="content">
+                    <b>Is VC Funding Drying Up? </b>
+                    <small>Private funding by VC firms is down 50% YOY. <br> We take a look at what that means.</small>
+                </div>
+            </div>
+
+            <div class="item5 footer"><img src="./images/image-retro-pcs.jpg" width="100px" alt="">
+                    <div class="number">01</div>
+                               <b>Reviving Retro PCs</b>
+                            <p>What happens when old PCs are given modern upgrades?</p>
+                        </div>
+            <div class="item6 footer"><img src="./images/image-top-laptops.jpg" width="100px" alt="">
+                <div class="number">02</div>
+                <b>Top 10 Laptops of 2022</b>
+                <p>Our best picks for various needs and budgets.</p>
+            </div>
+            <div class="item7 footer"><img src="./images/image-gaming-growth.jpg" width="100px" alt="">
+                <div class="number">03</div>
+                <b>The Growth of Gaming</b>
+             <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+        </div>
     </main>
 
-    <script src="script.js"></script>
+    <script src="script.js" lang="javascript"></script>
 </body>
 </html>
