@@ -62,9 +62,9 @@ Grid
 
 ## Author
 
-- Website - [Joy obaidu]()
-- Frontend Mentor - [@JoyObaidu](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Joy obaidu](https://github.com/JoyObaidu)
+- Frontend Mentor - [@JoyObaidu](https://www.frontendmentor.io/profile/JoyObaidu)
+- Twitter -[@ObaiduJoy](https://www.twitter.com/ObaiduJoy)
 
 
 ## Acknowledgments
