@@ -36,7 +36,7 @@ image.png
 ### Links
 
 - Solution URL: (https://github.com/JoyObaidu/news-home-page.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: ](https://joyobaidu.github.io/news-home-page/)
 
 ## My process
 
